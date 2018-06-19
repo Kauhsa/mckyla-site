@@ -86,10 +86,10 @@ const IndexPage = () => (
       <div>
         <h3>2. Tule avoimiin oviin</h3>
         <p>
-          Saavu joka <strong>toisen viikon torstaina</strong> järjestettäviin
+          Saavu <strong>joka toisen viikon torstaina</strong> järjestettäviin
           avoimiin oviin! Löydät avoimien ovien päivämäärät{" "}
           <a
-            href="https://calendar.google.com/calendar?cid=cW1tbDFia3NoNWlrY28ybmxmdGgzZXFxaWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+            href="https://calendar.google.com/calendar/embed?src=qmml1bksh5ikco2nlfth3eqqic%40group.calendar.google.com&ctz=Europe%2FHelsinki"
             target="_blank"
             rel="noopener noreferrer"
           >
