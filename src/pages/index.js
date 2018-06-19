@@ -122,7 +122,7 @@ const IndexPage = () => (
       McKylän Superarcade sijaitsee <strong>Espoon Mäkkylässä</strong>, aivan
       Mäkkylän juna-aseman ja 550-linjan pysäkin vieressä.{" "}
       <a
-        href="https://maps.google.com/?q=Turuntie%2020,%20Espoo,%20Finland"
+        href="https://www.google.com/maps/search/?api=1&query=Turuntie+20,+Espoo,+Finland"
         target="_blank"
         rel="noopener noreferrer"
       >
