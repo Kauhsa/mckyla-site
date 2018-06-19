@@ -78,8 +78,8 @@ const IndexPage = () => (
           >
             Tanssipelaajien Discord-serverin
           </a>{" "}
-          #arcadevuorot-kanavalla. Joku tilan vuokralaisista saattaa haluta
-          peluuttaa sinua ja/tai ystäviäsi!
+          <strong>#arcadevuorot</strong>-kanavalla. Joku tilan vuokralaisista
+          saattaa haluta peluuttaa sinua ja/tai ystäviäsi!
         </p>
       </div>
 
