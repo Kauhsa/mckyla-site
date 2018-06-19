@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import { css, injectGlobal } from "emotion";
 import styled from "react-emotion";
 
-import headerBackground from "../images/header-background.png";
 import logo from "../images/logo.svg";
 import media from "../utils/media";
 
@@ -32,7 +31,7 @@ injectGlobal`
 `;
 
 const Header = styled.div`
-  background-image: url('${headerBackground}');
+  background-image: url('${props => props.backgroundUrl}');
   background-color: #DD4200;
   background-position: center 20%;
   background-size: cover;
@@ -65,7 +64,7 @@ const Layout = ({ children, data }) => (
       <title>McKylän Superarcade</title>
     </Helmet>
 
-    <Header>
+    <Header backgroundUrl={data.background.childImageSharp.resize.src}>
       <Logo src={logo} />
     </Header>
     <Container>{children()}</Container>
@@ -79,6 +78,14 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+
+    background: file(relativePath: { eq: "header-background.png" }) {
+      childImageSharp {
+        resize(width: 1920, quality: 80, toFormat: JPG) {
+          src
+        }
       }
     }
   }
